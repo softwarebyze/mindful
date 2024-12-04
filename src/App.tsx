@@ -79,6 +79,7 @@ function App() {
         />
       </div>
       <h1>Mindful</h1>
+      <h2>with 5-sec pause</h2>
       <button onClick={playAudio} disabled={isPlaying}>
         {isPlaying ? "Playing..." : "Encourage Me!"}
       </button>
