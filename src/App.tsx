@@ -2,7 +2,12 @@ import { useState } from "react";
 import "./App.css";
 import mindful from "./assets/mindful.jpg";
 
-const voiceId = "21m00Tcm4TlvDq8ikWAM";
+// const originalVoiceId = "21m00Tcm4TlvDq8ikWAM"
+// const AliceVoiceId = "Xb7hH8MSUJpSbSDYk0k2";
+// const MatildaVoiceId = "XrExE9yKIg1WjnnlVkGX";
+const AriaVoiceId = "9BWtsMINqrJLrRacOk9x";
+
+const voiceId = AriaVoiceId;
 const sampleText =
   "Remember that this moment does not define you. Like waves on the shore, challenges come and go, but your inner strength remains constant. You've overcome difficult times before, and while this path may feel heavy now, each step forward, no matter how small, is a victory worth celebrating. Take time to breathe, to rest, and to be gentle with yourself. The dawn always comes, even after the longest night, and you are never as alone as you might feel. Your resilience is remarkable, even when you don't feel strong. Trust in your journey, in your ability to heal, and in the better days ahead.";
 
@@ -29,8 +34,8 @@ function App() {
             text: sampleText,
             model_id: "eleven_monolingual_v1",
             voice_settings: {
-              stability: 0.5,
-              similarity_boost: 0.75,
+              stability: 0.6,
+              similarity_boost: 0.25,
             },
           }),
         }
@@ -80,6 +85,7 @@ function App() {
         />
       </div>
       <h1>Mindful</h1>
+      <h2>Adjusted Voice</h2>
       <button onClick={playAudio} disabled={isPlaying}>
         {isPlaying ? "Playing..." : "Encourage Me!"}
       </button>
