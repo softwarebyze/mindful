@@ -3,8 +3,7 @@ import "./App.css";
 import mindful from "./assets/mindful.jpg";
 
 const voiceId = "21m00Tcm4TlvDq8ikWAM";
-const sampleText =
-  "Remember that this moment does not define you. Like waves on the shore, challenges come and go, but your inner strength remains constant. You've overcome difficult times before, and while this path may feel heavy now, each step forward, no matter how small, is a victory worth celebrating. Take time to breathe, to rest, and to be gentle with yourself. The dawn always comes, even after the longest night, and you are never as alone as you might feel. Your resilience is remarkable, even when you don't feel strong. Trust in your journey, in your ability to heal, and in the better days ahead.";
+const sampleText = `Remember that this moment does not define you. Like waves on the shore, challenges come and go, but your inner strength remains constant. You've overcome difficult times before, and while this path may feel heavy now, each step forward, no matter how small, is a victory worth celebrating. Take time to breathe, to rest, and to be gentle with yourself. Let's take a 5 second break <break time="5.0s" /> Now we're back. The dawn always comes, even after the longest night, and you are never as alone as you might feel. Your resilience is remarkable, even when you don't feel strong. Trust in your journey, in your ability to heal, and in the better days ahead.`;
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
